@@ -1,6 +1,10 @@
+# KevCaz added
+*.pdf
+
 # History files
 .Rhistory
 .Rapp.history
+
 
 # Session Data files
 .RData

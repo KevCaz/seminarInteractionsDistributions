@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Biotic interactions and geographical distribution </title>
+  <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+  <!-- Add font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+  @import url('https://fonts.googleapis.com/css?family=Andada|Squada+One|Jaldi');
+  /*@import url('https://fonts.googleapis.com/css?family=Bungee|Passion+One');*/
+  /*<link href="https://fonts.googleapis.com/css?family=Bungee|Candal|Passion+One" rel="stylesheet">*/
+  @import url('https://fonts.googleapis.com/css?family=Arya');
+  body {
+    font-family: 'Arya';
+    /*font-family: 'Marmelad', sans-serif;*/
+    font-weight: lighter;
+  }
+
+  h1 {
+    font-family: 'Squada One', cursive;
+    /*font-family: 'Bungee', cursive;*/
+    /*font-family: 'Passion One', cursive;*/
+    /*font-family: 'Candal', sans-serif;*/
+  }
+
+  h2 {
+      padding-left: .8em;
+  }
+  h3 {
+      padding-left: 1.6em;
+  }
+
+
+  h1, h2, h3 {
+    font-weight: medium;
+  }
+
+
+
+  .remark-slide-content {
+    font-size: 1.8em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .remark-slide-content h1 {
+    font-size: 2.2em;
+  }
+  .remark-slide-content h2 { font-size: 1.5em; }
+  .remark-slide-content h3 { font-size: 1.3em; }
+  .remark-slide-content blockquote {
+    font-size: 1.2em;
+    padding-left: 1em;
+  }
+
+  .footnote {
+    bottom: 1em;
+  }
+
+  .large{
+    font-size: 1.4em;
+  }
+
+  .small{
+    font-size: .87em;
+  }
+
+  .alert{
+    color: #1583cc;
+    background-color: #fff;
+  }
+
+  .success{
+    color: #3adb76;
+  }
+
+  /*warning: #ffae00*/
+  a > code {
+    color: #50b5d5;
+  }
+
+  pre {
+    padding: 1px;
+  }
+
+  .remark-code, .remark-inline-code {
+    font-family: 'Ubuntu Mono';
+  }
+
+  .remark-inline-code {
+    color: #1583cc;
+    background: #000000;
+  }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+
+  .remark-slide-number{
+    /*opacity: 0;*/
+    opacity: 0;
+  }
+
+  .style1 {
+    background: #000000;
+    color: #fff;
+    text-shadow: 0 0 2px #333;
+  }
+  .style1 h1, .style1 h2 {
+    color: #fff;
+  }
+
+  .style1 a {
+    color: rgb(21, 131, 204);
+  }
+
+  /*add 2 column*/
+  .column:first-of-type {float:left}
+  .column:last-of-type {float:right}
+
+  .style1 .column:first-of-type {width: 55%}
+  .style1 .column:last-of-type {width: 45%}
+
+
+
+  .style2 {
+    background: rgb(21, 131, 204);
+    color: #000000;
+  }
+  .style2 h1, .style2 h2 {
+    color: #fff;
+    line-height: 1em;
+    font-size: 2.2em;
+  }
+
+  .style2 h3 {
+    padding-left: 0em;
+    font-size: 1.6em;
+  }
+
+  .style2 a {
+    color: #232323;
+  }
+
+  </style>
+
+</head>
+
+<!-- cd /Users/KevCaz/Codes/Github/decktape -->
+<!-- ./bin/phantomjs decktape.js -s 1600x900 file:///Users/KevCaz/Dropbox/grenoble2017/grenoble.html#1 /Users/KevCaz/Dropbox/grenoble2017/grenoble.pdf -->
+
+
+
+<body>
+
+  <textarea id="source">
+
+    name: title
+    layout: true
+    class: center, middle, style1
+    ---
+    ![:scale 65%](./img/logos.png)
+
+    ----
+    <br/>  <br/>  <br/>
+
+    # IMPACT OF BIOTIC INTERACTIONS ON THE GEOGRAPHICAL REPARTITION OF SPECIES
+
+
+    <br/><br/><br/>
+    ### LECA, Genoble, February 9th
+    ### [Kévin Cazelles](http://kevincazelles.fr) &nbsp;&nbsp; [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/KevCaz)
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center middle, style2
+    ---
+    # INTRODUCTION
+    <hr/>
+    ### Biogeography and biotic interactions
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+    ---
+    # Biogeography?
+    <hr/>
+
+    .center[![:scale 100%](fig/figmapw1.png)]
+
+    ---
+    # Biogeography
+    <hr/>
+
+    .center[![:scale 100%](fig/figmapw2.png)]
+
+    ---
+    # Biogeography
+    <hr/>
+
+    .center[![:scale 100%](fig/figmapw3.png)]
+
+
+
+    ---
+    # Individuals to population
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall1.png)]
+
+    ---
+    # Individuals to population
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall2.png)]
+
+    ---
+    # Population to metapopulations
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall3.png)]
+
+    ???
+    Interaction at this scale that one can actually envision interactions
+
+    ---
+    # Population to metapopulations
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall4.png)]
+
+    ???
+    Interaction at this scale that one can actually envision interactions
+
+    ---
+    # Population to metapopulations
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall5.png)]
+
+    ???
+    Interaction at this scale that one can actually envision interactions
+
+    ---
+    # Metapopulations to metacommunities
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall6.png)]
+
+    ???
+    Interaction at this scale that one can actually envision interactions
+
+    ---
+    # Metacommunities through time
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall7.png)]
+
+    ???
+    We scaled up in space
+    Let's sclaed up in space
+    Lot's of process to take into account !
+    That explain why species are here... Lot's of processes le'ts recap
+
+    ---
+    # Metacommunities through time
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figall8.png)]
+
+
+
+    ---
+    # Biogeography
+    <hr/>
+
+    .center[![:scale 100%](fig/figmapw3.png)]
+
+
+    ---
+    # Factors shaping species distributions
+    <hr/><br/>
+    ## 1. Abiotic variables
+    --
+
+    ## 2. Dispersion
+    --
+
+    ## 3. Ecological interactions
+    --
+
+    ## 4. Historical factors
+    --
+
+    <br/>
+
+    # .center[INTERDEPENDENT]
+
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem0.png)]
+
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem1.png)]
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem2.png)]
+
+
+    ---
+    # Species Distribution Models (SDMs)
+    <hr/>  <br/>
+
+    .center[![:scale 100%](./fig/figgrad1.png)]
+
+
+    ---
+    # Species Distribution Models (SDMs)
+    <hr/>  <br/>
+
+    .center[![:scale 100%](./fig/figgrad2.png)]
+
+
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem3.png)]
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem4.png)]
+
+    ---
+    # Species Distribution Models (SDMs)
+    <hr/>  <br/>
+
+    .center[![:scale 100%](./fig/figgrad3.png)]
+
+    ---
+    # Species Distribution Models (SDMs)
+    <hr/>  <br/>
+
+    .center[![:scale 100%](./fig/figgrad4.png)]
+
+
+
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem5.png)]
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    ## Species are assumed independent
+    --
+
+    ### - Davis *et al*, 1998, *Nature*
+    --
+
+    <br/>
+
+    ## Joint Species Distribution Models (JSDMs)
+
+    ### - Clark *et al*, 2014, *Ecological Applications*
+
+    ### - Pollock *et al*, 2014, *Methods in Ecology and Evolution*
+
+    <br/>
+
+    --
+    ## Theory
+
+    ### - Gravel *et al*, 2011, *Ecology Letters*
+
+
+
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem6.png)]
+
+    ---
+    # Predicting species distributions
+    <hr/>
+
+    .center[![:scale 100%](./fig/figdem7.png)]
+
+
+
+
+
+
+    ---
+    # Questions
+    <hr/><br/>
+
+    --
+    ## 1. How to integrate biotic interactions into distribution models?
+    <br/><br/>
+
+    --
+    ## 2. How the properties of ecological networks influence co-occurrence?
+
+    <br/><br/>
+
+    --
+    ## 3. Can we infer interactions from co-occurrence?
+
+    ???
+    des why / des hypothèses et des how
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center, middle, style2
+    ---
+    # THEORY OF ISLAND BIOGEOGRAPHY AND BIOTIC INTERACTIONS
+    <hr />
+    ###  How to integrate biotic interactions into distribution models?
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW1.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW2.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW3.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW4.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW5.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW6.png)]
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW7.png)]
+
+
+    ---
+    # MacArthur et Wilson (1963, 1967)
+    <hr/><br/>
+    .center[![:scale 100%](./fig/figMW8.png)]
+
+
+
+
+    ---
+    # Model properties
+    <hr/><br/>
+
+    ## 1. Colonisation/extinction dynamics
+    --
+
+    <br/>
+    ## 2. Equilibrium
+    --
+
+    <br/>
+    ## 3. Elegant, easy to expand
+    --
+
+    <br/>
+    ## 4. Biotic and abiotic constraints are missing
+
+    ???
+    Attention, ça marche bien... et très utilisé
+
+
+    ---
+    # Assumption of independence released
+    <hr/><br/>
+
+    --
+    ## Gravel *et al*, 2011, *Ecology Letters*
+
+    --
+    ### 1. Island without prey = no predator colonisation
+    ### 2. Predator without prey = extinction
+    <br/>
+
+    --
+    ## Colonisation and extinction depend on the local community
+    <br/>
+
+
+    ???
+    première étape pour lever l'hypothèse.
+
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco1.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco2.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco3.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco4.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco5.png)]
+
+
+
+
+    ---
+    # Abiotic variables vary
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figniche1.png)]
+
+    ---
+    # Abiotic variables vary
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figniche2.png)]
+
+    ---
+    # Abiotic variables vary
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figniche3.png)]
+
+
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco6.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco7.png)]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figeco8.png)]
+
+
+    ---
+    # Results: the classical theory revisited
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figgtib0.png)]
+
+    ---
+    # Results: the classical theory revisited
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figgtib1.png)]
+
+
+    ---
+    # Results: the classical theory revisited
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figgtib2.png)]
+
+    ---
+    # Results: the classical theory revisited
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figgtib3.png)]
+
+    ---
+    # Results: the classical theory revisited
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figgtib4.png)]
+
+
+    ---
+    # Limits
+    <hr/>
+
+    ## For `\(n\)` species, a network `\(W\)`, abiotic variable(s) `\(E\)`,
+    --
+
+    <br/>
+
+    ## Community `\(C_k = \{0, 1, 0, 0, ..., 1, 0\}\)`
+    --
+
+    ## `\(P(C_{k,t+1} | C_{l,t+1}) = f(W, E)\)`
+
+    <br/>
+
+    --
+    ## `\(n\)` species `\(2^n\)` potential communities
+
+
+    --
+    ## Harris, 2016, *Ecology*
+
+
+    --
+    <br/>
+    ### .right[Cazelles *et al*, 2016, [*Ecography*.](http://doi.org/10.1111/ecog.01714)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center, middle, style2
+    ---
+    # CO-OCCURRENCE AND ECOLOGICAL NETWORK
+    <hr />
+    ### How the properties of ecological networks influence co-occurrence?
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc1.png)]
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc2.png)]
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc3.png)]
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc4.png)]
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc5.png)]
+
+    ---
+    # Co-occurrence and biotic interactions
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figcooc6.png)]
+
+
+    ---
+    # Checkerboard distribution (Diamond 1975)
+    <hr/><br/>
+
+    .center[![:scale 55%](./fig/figCS1.png)]
+
+
+    ---
+    # Checkerboard distribution (Diamond 1975)
+    <hr/><br/>
+
+    .center[![:scale 55%](./fig/figCS2.png)]
+
+
+
+    ---
+    # Checkerboard distribution (Diamond 1975)
+    <hr/><br/>
+
+    .center[![:scale 55%](./fig/figCS3.png)]
+
+
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ]
+    .column[
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    ]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    ]
+    .column[
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)=0\)`
+
+    <br/>
+
+    .center[![:scale 37%](./fig/figCS1.png)]
+    ]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    ]
+    .column[
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)<0\)`
+
+    <br/>
+
+    .center[![:scale 37%](./fig/figCS2.png)]
+    ]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    ]
+    .column[
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)>0\)`
+
+    <br/>
+
+    .center[![:scale 37%](./fig/figCS3.png)]
+    ]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    <br/>
+
+    ## Simulated co-occurrence (trophic interactions)
+    ]
+    .column[
+    <br/>
+    <br/>
+
+    .center[![:scale 42%](./fig/figeco8.png)]
+    ]
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    .column[
+    ## Observed *vs* Expected
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+    <br/>
+
+    ## Simulated co-occurrence (trophic interactions)
+    <br/>
+
+    ## Simulated networks
+    ]
+    .column[
+    <br/>
+
+    .center[![:scale 38%](./fig/figweb.png)]
+    ]
+
+
+
+    ---
+    # Co-occurrence and shortest path
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figsht0.png)]
+
+    ---
+    # Co-occurrence and shortest path
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figsht1.png)]
+
+    ---
+    # Co-occurrence and shortest path
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figsht2.png)]
+
+
+    ---
+    # Co-occurrence and shortest path
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figsht3.png)]
+
+    ---
+    # Co-occurrence and degree
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figdeg0.png)]
+
+    ---
+    # Co-occurrence and degree
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figdeg1.png)]
+
+    ---
+    # Co-occurrence and degree
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figdeg2.png)]
+
+
+    ---
+    # Co-occurrence and degree
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figdeg3.png)]
+
+
+
+    ---
+    # Conclusion and limits
+    <hr/><br/>
+
+    ## Shortest path <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+
+    --
+
+    ## Degree <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+
+
+    --
+
+    <br/>
+
+    ## Abiotic variables?
+
+    --
+    ## Empirical data?
+
+
+    --
+    <br/><br/><br/>
+    ### .right[Cazelles *et al*, 2016, [*Theoretical Ecology*.](http://doi.org/10.1007/s12080-015-0281-9)]
+
+
+
+
+
+
+
+
+
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center, middle, style2
+    ---
+    # DEALING WITH REAL DATA SETS
+    <hr />
+    ### Co-occurrence and empirical networks
+    ### Cazelles *et al*, 2017, *in prep*
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+
+    ---
+    # Abiotic variables
+    <hr/><br/>
+
+    .center[![:scale 90%](./fig/figab1.png)]
+
+    ---
+    # Abiotic variables
+    <hr/><br/>
+
+    .center[![:scale 90%](./fig/figab2.png)]
+
+    ---
+    # Integrating abiotic variables (G)
+    <hr/><br/>
+
+    # `\(P(X_{i,G},X_{j,G})\)` *vs*  `\(P(X_{i,G})P(X_{j,G})\)`
+
+
+    ---
+    # Integrating abiotic variables (G)
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figshtenv1.png)]
+
+    ---
+    # Integrating abiotic variables (G)
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figshtenv2.png)]
+
+
+    ---
+    # What did I do?
+    <hr/><br/>
+
+    ## Five data sets
+    --
+
+    <br/>
+
+    ## `\(P(X_{i,G},X_{j,G})\)` *vs*  `\(P(X_{i,G})P(X_{j,G})\)`
+    --
+
+    <br/>
+
+    ## SDMs to assign presence probabilities given abiotic context
+    --
+
+    <br/>
+
+    ## Detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i> once abiotic variables integrated
+
+
+
+    ---
+    # Kopelke *et al*, submitted, *Ecology*
+    <hr/>
+
+    .column[
+      .center[![:scale 87%](./fig/mapsal1.png)]
+    ]
+
+    .column[
+      .center[![:scale 25%](./img/cool.png)]
+    ]
+
+    ???
+    mettre les noms
+
+
+    ---
+    # Kopelke *et al*, submitted, *Ecology*
+    <hr/>
+
+    .column[
+      .center[![:scale 87%](./fig/mapsal2.png)]
+    ]
+
+    .column[
+      .center[![:scale 25%](./img/cool.png)]
+    ]
+
+    ???
+    symphyte / ovipositeur
+
+
+    ---
+    # Three levels networks
+    <hr/><br/>
+
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+    # 52 &nbsp; &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i>  &nbsp; &nbsp; 96  &nbsp; &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i>  &nbsp; &nbsp; 126 &nbsp; &nbsp; species
+
+    --
+    <br/>
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+
+    --
+    # Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+
+
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG0.png)
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG1.png)
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG2.png)
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG3.png)
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG4.png)
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler
+    <hr/><br/>
+
+    ![:scale 100%](./fig/figSG5.png)
+
+
+    ---
+    # Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+    <hr/><br/>
+    ![:scale 100%](./fig/figGP5.png)
+
+
+    ---
+    # Co-occurrence and shortest path
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figsht3.png)]
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler *vs* Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+    <hr/>
+
+    .center[![:scale 53%](./fig/figSG5.png)]
+    .center[![:scale 53%](./fig/figGP5.png)]
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler *vs* Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+    <hr/>
+
+    .center[![:scale 53%](./fig/figSG6.png)]
+    .center[![:scale 53%](./fig/figGP6.png)]
+
+    ---
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler *vs* Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
+    <hr/>
+
+    .center[![:scale 53%](./fig/figSG7.png)]
+    .center[![:scale 53%](./fig/figGP7.png)]
+
+    ---
+    # Co-occurrence and degree
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figdeg3.png)]
+
+
+
+    ---
+    # Conclusion
+    <hr/><br/>
+
+    ## Shortest path <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+
+    --
+    ## Degree <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+
+    --
+    ## Using empirical data sets.
+
+
+
+    --
+    <br/><br/><br/><br/><br/>
+    ### .right[Cazelles *et al*, 2017, *in prep*]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center, middle, style2
+    ---
+    # Concluding remarks and perspectives
+    <hr/>
+    ### Towards better predictions?
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+    ---
+
+    # Answers
+    <hr/><br/>
+
+    ## 1. How to integrate biotic interactions into distribution models?
+
+    --
+    ### `\( \Longrightarrow \)` Network distribution models (NDMs)
+
+    ---
+    # Answers
+    <hr/><br/>
+
+    ## 2. How the properties of ecological networks influence co-occurrence?
+    --
+
+    ### `\( \Longrightarrow \)` shortest path <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+    ### `\( \Longrightarrow \)` degree <i class="fa fa-long-arrow-up" aria-hidden="true"></i> &nbsp;&nbsp; `\( \Longrightarrow \)` &nbsp;&nbsp; detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+
+    ---
+    # Answers
+    <hr/><br/>
+
+    ## 3. Can we infer interactions from co-occurrence?
+    --
+
+    ### `\( \Longrightarrow \)` depends on the network properties
+
+    --
+
+    ### `\( \Longrightarrow \)` depends on the spatial scale (literature)
+
+    ???
+    variations des interactions
+
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC1.png)]
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC2.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC3.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC4.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC5.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC6.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC7.png)]
+
+
+    ---
+    # What do we really integrate?
+    <hr/>
+
+    .center[![:scale 90%](./fig/figshtenv2.png)]
+
+    --
+
+    ## .center[INTERDEPENDENCY]
+
+
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    ## Better than JSDMs? (more information)
+
+    --
+
+    ## Network Distribution Models (NDMs)
+
+    --
+
+    <br/>
+
+    ## Network `\(W\)`, abiotic variable(s) `\(E\)`
+
+    --
+
+    <br/>
+
+    ## How to predict interactions?
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figLast1.png)]
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figLast2.png)]
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figLast3.png)]
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figLast4.png)]
+
+    ---
+    # Towards mechanistic NDMs?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figLast5.png)]
+
+
+
+    ---
+    # Urgently needed
+    <hr/><br/>
+
+    ## Interactions ++  <i class="fa fa-long-arrow-right" aria-hidden="true"></i> predictions easier
+
+    ### Berlow *et al*, 2009, *PNAS*
+    --
+
+    <br/>
+
+    ## WWF, Living Planet Report 2016 [<i class="fa fa-globe" aria-hidden="true"></i>](http://awsassets.wwf.ca/downloads/wwf_living_planet_report_2016___risk_and_resilience_in_a_new_era.pdf)
+
+    >  If current trends continue to 2020
+    > vertebrate populations may decline by an
+    > average of 67 per cent compared to 1970.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ---
+    name: style2
+    layout: true
+    class: center, middle, style2
+    ---
+    # THANK YOU
+    <hr />
+    ### Merci
+
+    ---
+    name: style1
+    layout: true
+    class: center, style1
+
+    ---
+
+    ---
+    ## Figure 1
+    <br/>
+    ![:scale 64%](./figsup/figintro1.png)
+
+    ---
+    ## Figure 2
+    <br/>
+    ![:scale 100%](./figsup/figintro2.png)
+
+    ---
+    ## Figure 3
+    <br/>
+    ![:scale 100%](./figsup/figch11.png)
+
+    ---
+    ## Figure 4
+    <br/>
+    ![:scale 68%](./figsup/figch12.png)
+
+    ---
+    ## Figure 5
+    <br/>
+    ![:scale 68%](./figsup/figch13.png)
+
+    ---
+    ## Figure 6
+    <br/>
+    ![:scale 100%](./figsup/figch14.png)
+
+    ---
+    ## Figure 7
+    <br/><br/><br/>
+    ![:scale 100%](./figsup/figch15.png)
+
+    ---
+    ## Figure 8
+    <br/><br/><br/>
+    ![:scale 100%](./figsup/figch21.png)
+
+
+    ---
+    ## Figure 9
+    <br/>
+    ![:scale 80%](./figsup/figch31.png)
+
+
+    ---
+    ## Figure 10
+    <br/>
+    ![:scale 100%](./figsup/figch32.png)
+
+    ---
+    ## Figure 11
+    ![:scale 67%](./figsup/figch33.png)
+
+    ---
+    ## Figure 12
+    ![:scale 50%](./figsup/figch34.png)
+
+    ---
+    ## Figure 13
+    <br/>
+    ![:scale 40%](./figsup/figch35.png)
+
+    ---
+    ## Figure 14
+    ![:scale 32%](./figsup/figch36.png)
+
+    ---
+    ## Figure 15
+    <br/>
+    .column[![:scale 74%](./figsup/figch37a.png)]
+    .column[![:scale 74%](./figsup/figch37b.png)]
+
+    ---
+    ## Figure 16
+    <br/>
+    ![:scale 70%](./figsup/figch38.png)
+
+    ---
+    ## Figure 17
+    <br/><br/><br/>
+    ![:scale 100%](./figsup/figch39.png)
+
+    ---
+    ## Figure 18
+    ![:scale 80%](./figsup/figch310.png)
+
+    ---
+    ## Figure 19
+    ![:scale 70%](./figsup/figch311.png)
+
+    ---
+    ## Figure 21
+    ![:scale 64%](./figsup/figch312.png)
+
+    ---
+    ## Figure 21
+    <br/>
+    ![:scale 48%](./figsup/figch313.png)
+
+    ---
+    ## Figure 22
+    <br/>
+
+    .column[
+      ![:scale 60%](./figsup/figch41a.png)
+    ]
+    .column[
+      ![:scale 32%](./figsup/figch41b.png)
+      ![:scale 32%](./figsup/figch41c.png)
+    ]
+
+    ---
+    ## Figure 23
+    <br/>
+
+    ![:scale 70%](./figsup/figch42.png)
+
+
+    ---
+    ## Figure 24
+    <br/>
+
+    ![:scale 73%](./figsup/figch43.png)
+
+    ---
+    ## Figure 25
+
+    ![:scale 64%](./figsup/figch44.png)
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+
+    ---
+    # Phylopic
+    <hr/><br/>
+
+    - Silhouette image found on [Phylopic](http://phylopic.org/about/)
+
+    - Silouhette [Ichneumonidae](http://phylopic.org/name/07b2fc56-3489-4007-904b-1a0904ea2647) ; credit Melissa Broussard.
+
+    ---
+    count:false
+    # Salix data set
+    <hr/>
+    ### Species on slides 120-121:
+
+    1- Female of *Euura lapponica* ovipositing on *Salix lapponum* ;
+
+    2- leaf midrib pea gall induced by *Pontania norvegica* on *Salix borealis* ;
+
+    3-  Larva of *Pontania pustulator* insid1
+    e opened leaf midrib bean gall on *Salix phylicifolia* ;
+
+    <br/>
+
+    > 641 site-visits over 29 years, and on 165,424 galls representing 96 herbivore
+    > nodes and 52 plant nodes. The dissections and rearings yielded 42,129 natural
+    > enemies belonging to 126 species
+
+
+
+    ---
+    name: style1
+    layout: true
+    class: style1
+
+    ---
+    count:false
+    # Null models
+    <hr/><br/>
+    --
+
+    ### Since 1970 (following Diamond's paper)
+
+    ### Connor et al., 2013, Ecology.
+
+    <br/>
+
+    --
+
+    ### Pattern-generating models based on randomization of ecological data
+    ### Some elements are fixed, others vary randomly.
+
+    ---
+    count:false
+    # Null models
+    <hr/><br/>
+
+    ### What would be expected in the absence of a given mechanism?
+
+    <br/>
+    ### Detection of pattern in binary presence–absence matrices.
+
+
+    ---
+    count: false
+    # Ulrich & Gotelli, 2013, *Oikos*
+    <hr/><br/>
+
+    ## Test 15 indices.
+
+    <br/>
+
+    .center[![:scale 74%](./figsup/co-occu.png)]
+
+
+
+    ---
+    count: false
+    # Null models
+    <hr/><br/>
+
+    > Null models of species associations should, thus, be used only to reveal the structure of co-occurrence data.
+
+    ## Difficult to assign to a particular process
+
+    ---
+    count:false
+    # MacArthur and Wilson Limits
+    <hr/><br/>
+
+    ## Releasing the assumption of a constant pool of species is a KEY
+
+    --
+    ## Very challenging though:
+    ### - very large pool of species
+    ### - abondances (metapopulations)
+    ### - evolutionnary process
+
+    <br/>
+    --
+
+    ## All solutions increase the complexity.
+
+
+
+  </textarea>
+  <script src="./remark-latest.min.js" type="text/javascript"></script>
+  <!-- <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script> -->
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+  <script type="text/javascript">
+
+    // Macros
+    remark.macros.scale = function (percentage) {
+      var url = this;
+      return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+    var slideshow = remark.create({
+      ratio: "4:3",
+      highlightStyle: 'sunburst' });
+
+    // Setup MathJax
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+        return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+    });
+
+    MathJax.Hub.Configured();
+
+  </script>
+</body>
+</html>
