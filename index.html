@@ -239,7 +239,7 @@
     --
 
     <br>
-    ## Data ecologists
+    ## Data ecologist
     --
 
     <br>
@@ -248,7 +248,7 @@
 
     .right[<img src="img/logo/inSilecoLogo.png" height="200" align="right" style="padding:12px"/>]
 
-    ### .left[[inSileco: Codes Indeas and methods in Ecology](https://insileco.github.io/)]
+    ### .left[[inSileco: Codes Ideas and methods in Ecology](https://insileco.github.io/)]
 
 
     ---
@@ -267,32 +267,32 @@
     layout: true
     class: style1
     ---
-    # Biogeography?
+    # Biogeography: distributions
     <hr/>
 
     .center[![:scale 100%](fig/biogeo/ecoreg.png)]
 
     ---
-    # Biogeography?
+    # Biogeography: distributions
     <hr/>
 
     .center[![:scale 100%](fig/biogeo/figmapw3.png)]
 
 
     ---
-    # Individuals to population
+    # Biogeography: processes
     <hr/>
 
     .center[![:scale 100%](fig/mech/figall1.png)]
 
     ---
-    # Individuals to population
+    # Individuals
     <hr/>
 
     .center[![:scale 100%](fig/mech/figall2.png)]
 
     ---
-    # Population to metapopulations
+    # Individuals to population
     <hr/>
 
     .center[![:scale 100%](fig/mech/figall3.png)]
@@ -353,7 +353,7 @@
 
 
     ---
-    # Factors shaping species distributions
+    # Biogeography: processes
     <hr/><br/>
     ## 1. Abiotic variables
     --
@@ -554,8 +554,7 @@
 
     ---
     # MacArthur et Wilson (1963, 1967)
-    <hr/><br/>
-    .center[![:scale 100%](fig/mcaWil/figMW1.png)]
+    <hr/>
 
     ---
     # MacArthur et Wilson (1963, 1967)
@@ -668,29 +667,6 @@
 
     .center[![:scale 100%](fig/gtib/figGTIB5.png)]
 
-
-
-
-    ---
-    # Abiotic variables vary
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figniche1.png)]
-
-    ---
-    # Abiotic variables vary
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figniche2.png)]
-
-    ---
-    # Abiotic variables vary
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figniche3.png)]
-
-
-
     ---
     # What did I do?
     <hr/><br/>
@@ -743,28 +719,44 @@
 
 
     ---
-    # Limits
-    <hr/>
+    # Conclusion and Limits
+    <hr/><br>
 
-    ## For `n` species, a network `W`, abiotic variable(s) `E`,
+    ### For `n` species, a network `W`, a set of abiotic variables `E`,
     --
 
     <br/>
 
-    ## Community `\(C_k = \{0, 1, 0, 0, ..., 1, 0\}\)`
+    ### Community `\(C_k = \{0, 1, 0, 0, ..., 1, 0\}\)`
+    --
+
+    <br/>
     --
 
     ## `\(P(C_{k,t+1} | C_{l,t+1}) = f(W, E)\)`
 
-    <br/>
-
-    --
-    ## `\(n\)` species `\(2^n\)` potential communities
-
-
     --
     <br/>
     ### .right[Cazelles *et al*, 2016, [*Ecography*.](http://doi.org/10.1111/ecog.01714)]
+
+
+
+    ---
+    # Conclusion and Limits
+    <hr/><br>
+
+    ### Community-based biogeography; more than occurrence and co-occurrence
+
+    <br/>
+
+    --
+    ### `\(n\)` species `\(2^n\)` potential communities
+
+    <br/>
+
+    --
+    ### What is wrong with co-occurrence data for species embedded in a network?
+
 
 
 
@@ -834,14 +826,14 @@
     # Checkerboard distribution (Diamond 1975)
     <hr/><br/>
 
-    .center[![:scale 55%](./fig/figCS1.png)]
+    .center[![:scale 52%](./fig/figCS1.png)]
 
 
     ---
     # Checkerboard distribution (Diamond 1975)
     <hr/><br/>
 
-    .center[![:scale 55%](./fig/figCS2.png)]
+    .center[![:scale 52%](./fig/figCS2.png)]
 
 
 
@@ -849,7 +841,7 @@
     # Checkerboard distribution (Diamond 1975)
     <hr/><br/>
 
-    .center[![:scale 55%](./fig/figCS3.png)]
+    .center[![:scale 52%](./fig/figCS3.png)]
 
 
 
@@ -858,10 +850,12 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
+    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     ]
     .column[
-    ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
+
     ]
 
     ---
@@ -869,15 +863,16 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
     ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     ]
     .column[
-    ### `\(P(X_i,X_j) - P(X_i)P(X_j)=0\)`
+    `\(P(X_i,X_j) - P(X_i)P(X_j)=0\)`
 
     <br/>
 
-    .center[![:scale 37%](./fig/figCS1.png)]
+    .center[![:scale 32%](./fig/figCS1.png)]
     ]
 
     ---
@@ -885,15 +880,16 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
     ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     ]
     .column[
-    ### `\(P(X_i,X_j) - P(X_i)P(X_j)<0\)`
+    `\(P(X_i,X_j) - P(X_i)P(X_j)<0\)`
 
     <br/>
 
-    .center[![:scale 37%](./fig/figCS2.png)]
+    .center[![:scale 32%](./fig/figCS2.png)]
     ]
 
     ---
@@ -901,15 +897,16 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
     ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     ]
     .column[
-    ### `\(P(X_i,X_j) - P(X_i)P(X_j)>0\)`
+    `\(P(X_i,X_j) - P(X_i)P(X_j)>0\)`
 
     <br/>
 
-    .center[![:scale 37%](./fig/figCS3.png)]
+    .center[![:scale 32%](./fig/figCS3.png)]
     ]
 
     ---
@@ -917,11 +914,12 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
     ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     <br/>
 
-    ## Simulated co-occurrence (trophic interactions)
+    ### Simulated co-occurrence (trophic interactions)
     ]
     .column[
     <br/>
@@ -935,14 +933,15 @@
     <hr/><br/>
 
     .column[
-    ## Observed *vs* Expected
+    ### Observed *vs* Expected
+    <br>
     ### `\(P(X_i,X_j) - P(X_i)P(X_j)\)`
     <br/>
 
-    ## Simulated co-occurrence (trophic interactions)
+    ### Simulated co-occurrence (trophic interactions)
     <br/>
 
-    ## Simulated networks
+    ### Simulated networks
     ]
     .column[
     <br/>
@@ -1067,6 +1066,55 @@
 
     .center[![:scale 90%](./fig/figab2.png)]
 
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC1.png)]
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC2.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC3.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC4.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC5.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC6.png)]
+
+
+    ---
+    # Using species as predictors?
+    <hr/><br/>
+
+    .center[![:scale 100%](./fig/figAUC7.png)]
+
+
     ---
     # Integrating abiotic variables (G)
     <hr/><br/>
@@ -1091,27 +1139,27 @@
     # What did I do?
     <hr/><br/>
 
-    ## Five data sets
+    ### Five data sets
     --
 
     <br/>
 
-    ## `\(P(X_{i,G},X_{j,G})\)` *vs*  `\(P(X_{i,G})P(X_{j,G})\)`
+    ### `\(P(X_{i,G},X_{j,G})\)` *vs*  `\(P(X_{i,G})P(X_{j,G})\)`
     --
 
     <br/>
 
-    ## SDMs to assign presence probabilities given abiotic context
+    ### SDMs to assign presence probabilities given abiotic context
     --
 
     <br/>
 
-    ## Detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i> once abiotic variables integrated
+    ### Detection <i class="fa fa-long-arrow-down" aria-hidden="true"></i> once abiotic variables integrated
 
 
 
     ---
-    # Kopelke *et al*, submitted, *Ecology*
+    # Kopelke *et al*, *Ecology* (2017)
     <hr/>
 
     .column[
@@ -1127,7 +1175,7 @@
 
 
     ---
-    # Kopelke *et al*, submitted, *Ecology*
+    # Kopelke *et al*, *Ecology* (2017)
     <hr/>
 
     .column[
@@ -1252,7 +1300,7 @@
 
     --
     <br/><br/><br/><br/><br/>
-    ### .right[Cazelles *et al*, 2017, *in prep*]
+    ### .right[Cazelles *et al*, 2018, *in prep*]
 
 
 
@@ -1324,54 +1372,6 @@
 
 
     ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC1.png)]
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC2.png)]
-
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC3.png)]
-
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC4.png)]
-
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC5.png)]
-
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC6.png)]
-
-
-    ---
-    # Using species as predictors?
-    <hr/><br/>
-
-    .center[![:scale 100%](./fig/figAUC7.png)]
-
-
-    ---
     # What do we really integrate?
     <hr/>
 
@@ -1436,23 +1436,198 @@
     .center[![:scale 100%](./fig/figLast5.png)]
 
 
-
     ---
-    # Urgently needed
+    # Towards mechanistic NDMs?
     <hr/><br/>
 
-    ## Interactions ++  <i class="fa fa-long-arrow-right" aria-hidden="true"></i> predictions easier
+    # A first step:
 
-    ### Berlow *et al*, 2009, *PNAS*
+    ## **[USING AN ENERGETIC FRAMEWORK](https://kevcaz.github.io/talkBES2017/#1)**
+
+
+    ---
+    # A truism?
+    <hr/><br>
+
+    ### 1- Solar radiation ![:fontawe](long-arrow-right) Autotrophs ![:fontawe](long-arrow-right) Hetreotrophs
+    <br>
+
     --
+    ### 2- Carbon source
+    <br>
 
-    <br/>
+    --
+    ### 3- Water availibility
+    <br>
 
-    ## WWF, Living Planet Report 2016 [<i class="fa fa-globe" aria-hidden="true"></i>](http://awsassets.wwf.ca/downloads/wwf_living_planet_report_2016___risk_and_resilience_in_a_new_era.pdf)
+    --
+    ### 4- Nutrients availibility
 
-    >  If current trends continue to 2020
-    > vertebrate populations may decline by an
-    > average of 67 per cent compared to 1970.
+    ---
+    # A truism?
+    <hr/>
+
+    .center[![:scale 100%](fig/biogeo/ecoreg.png)]
+
+    ---
+    # Model principle
+    <hr/><br>
+
+    .center[![:scale 100%](fig/gtib/figGTIB9.png)]
+
+    ---
+    # Model principle
+    <hr/><br>
+
+    ## What's new?
+    <br>
+
+    --
+    ## 1- Cost of a community
+
+    --
+    ## 2- Extinctions
+
+      ### Random
+
+      ### Energy based
+
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 35%](fig/netenerg1.png)]
+
+    ### Niche model + body size to derive maintenance metabolism
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 45%](fig/netenerg2.png)]
+
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 45%](fig/netenerg3.png)]
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 45%](fig/netenerg4.png)]
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 45%](fig/netenerg5.png)]
+
+    ---
+    # Energy cost of a network on an island
+    <hr/><br>
+
+    .center[![:scale 45%](fig/netenerg6.png)]
+
+
+
+    ---
+    # Cost of a community on an island
+    <hr/>
+
+    .center[![:scale 75%](fig/motifcost1.png)]
+
+    ---
+    # Cost of a community on an island
+    <hr/>
+
+    .center[![:scale 75%](fig/motifcost2.png)]
+
+    ---
+    # Cost of a community on an island
+    <hr/>
+
+    .center[![:scale 75%](fig/motifcost3.png)]
+
+
+    ---
+    # Model
+    <hr/><br>
+
+    .center[![:scale 100%](img/figeco9.png)]
+
+
+
+    ---
+    # SARs become SERs &nbsp;&nbsp; .small[[Wright, *Oikos*, 1983.](https://www.jstor.org/stable/3544109)]
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes11.png)]
+
+    ---
+    # SARs become SERs &nbsp;&nbsp;
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes12.png)]
+
+
+    ---
+    # SARs become SERs &nbsp;&nbsp;
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes13.png)]
+
+
+    ---
+    # SARs become SERs &nbsp;&nbsp;
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes14.png)]
+
+    ---
+    # SARs become SERs &nbsp;&nbsp;
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes15.png)]
+
+
+
+    ---
+    # Mean degree
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes21.png)]
+
+    ---
+    # Mean degree
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes22.png)]
+
+    ---
+    # Mean degree
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes23.png)]
+
+    ---
+    # Mean degree
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes24.png)]
+
+    ---
+    # Mean degree &nbsp;&nbsp; .small[[Piechnik *et al.*, *Oikos*, 2008.](https://www.jstor.org/stable/3544109)]
+    <hr/>
+
+    .center[![:scale 100%](fig/figRes25.png)]
+
+
+    <!-- contrast random and non randon scenarios -->
+
 
 
 
@@ -1487,6 +1662,25 @@
     class: center, style1
 
     ---
+
+    ---
+    # Urgently needed
+    <hr/><br/>
+
+    ## Interactions ++  <i class="fa fa-long-arrow-right" aria-hidden="true"></i> predictions easier
+
+    ### Berlow *et al*, 2009, *PNAS*
+    --
+
+    <br/>
+
+    ## WWF, Living Planet Report 2016 [<i class="fa fa-globe" aria-hidden="true"></i>](http://awsassets.wwf.ca/downloads/wwf_living_planet_report_2016___risk_and_resilience_in_a_new_era.pdf)
+
+    >  If current trends continue to 2020
+    > vertebrate populations may decline by an
+    > average of 67 per cent compared to 1970.
+
+
 
     ---
     ## Figure 1
