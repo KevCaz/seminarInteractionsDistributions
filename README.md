@@ -20,3 +20,7 @@ for this great opportunity.
 2. Figures of my own are created using [R](https://www.r-project.org/);
 
 3. [decktape](https://github.com/astefanutti/decktape) is used to export the slides when needed.
+
+```
+decktape --no-sandbox file:///path/to/index.html /path2/to/talkUot2017_KC.pdf
+```

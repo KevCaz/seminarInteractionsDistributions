@@ -248,7 +248,7 @@
 
     .right[<img src="img/logo/inSilecoLogo.png" height="200" align="right" style="padding:12px"/>]
 
-    ### .left[[inSileco: Codes Ideas and methods in Ecology](https://insileco.github.io/)]
+    ### .left[[inSileco: codes, ideas and methods in ecology](https://insileco.github.io/)]
 
 
     ---
@@ -301,7 +301,7 @@
     Interaction at this scale that one can actually envision interactions
 
     ---
-    # Population to metapopulations
+    # Population to metapopulation
     <hr/>
 
     .center[![:scale 100%](fig/mech/figall4.png)]
@@ -310,7 +310,7 @@
     Interaction at this scale that one can actually envision interactions
 
     ---
-    # Population to metapopulations
+    # Populations to metapopulations
     <hr/>
 
     .center[![:scale 100%](fig/mech/figall5.png)]
@@ -482,13 +482,13 @@
 
 
     ---
-    # Predicting species distributions
+    # Biogeography: challenge
     <hr/>
 
     .center[![:scale 100%](./fig/figdem6.png)]
 
     ---
-    # Predicting species distributions
+    # Biogeography: challenge
     <hr/>
 
     .center[![:scale 100%](./fig/figdem7.png)]
@@ -514,14 +514,10 @@
     2. How the properties of ecological networks influence co-occurrence?
 
     --
-    3. Can we infer interactions from co-occurrence?
+    3. Can we infer interactions from co-occurrence data?
 
     ???
     des why / des hypothèses et des how
-
-    <br>
-
-    --
 
 
 
@@ -730,10 +726,7 @@
     ### Community `\(C_k = \{0, 1, 0, 0, ..., 1, 0\}\)`
     --
 
-    <br/>
-    --
-
-    ## `\(P(C_{k,t+1} | C_{l,t+1}) = f(W, E)\)`
+    ## `\(P(C_{k,t+1} | C_{l, t}) = f(W, E)\)`
 
     --
     <br/>
@@ -742,10 +735,12 @@
 
 
     ---
+    <br/>
+    --
     # Conclusion and limits
     <hr/><br>
 
-    ### Community-based biogeography; more than occurrence and co-occurrence
+    ### Community-based biogeography: more than occurrence and co-occurrence
 
     <br/>
 
@@ -775,7 +770,7 @@
     layout: true
     class: center, middle, style2
     ---
-    # CO-OCCURRENCE AND ECOLOGICAL NETWORK
+    # CO-OCCURRENCE AND ECOLOGICAL NETWORKS
     <hr />
     ### How the properties of ecological networks influence co-occurrence?
 
@@ -848,6 +843,11 @@
     ---
     # What did I do?
     <hr/><br/>
+
+    ### I looked at checkerboard distrbutions for nodes at different position in the network
+    <br>
+
+    --
 
     .column[
     ### Observed `vs` Expected
@@ -1046,7 +1046,7 @@
     ---
     # DEALING WITH REAL DATA SETS
     <hr />
-    ### Can we infer interactions from co-occurrence?
+    ### Can we infer interactions from co-occurrence data?
 
     ---
     name: style1
@@ -1067,20 +1067,20 @@
 
 
     ---
-    # Integrating abiotic variables (G)
+    # Integrating abiotic variables (E)
     <hr/><br/>
 
-    # `\(P(X_{i,G},X_{j,G})\)` `vs`  `\(P(X_{i,G})P(X_{j,G})\)`
+    # `\(P(X_{i,E},X_{j,E})\)` `vs`  `\(P(X_{i,E})P(X_{j,E})\)`
 
 
     ---
-    # Integrating abiotic variables (G)
+    # Integrating abiotic variables (E)
     <hr/><br/>
 
     .center[![:scale 100%](./fig/figshtenv1.png)]
 
     ---
-    # Integrating abiotic variables (G)
+    # Integrating abiotic variables (E)
     <hr/><br/>
 
     .center[![:scale 100%](./fig/figshtenv2.png)]
@@ -1095,7 +1095,7 @@
 
     <br/>
 
-    ### `\(P(X_{i,G},X_{j,G})\)` `vs`  `\(P(X_{i,G})P(X_{j,G})\)`
+    ### `\(P(X_{i,E},X_{j,E})\)` `vs`  `\(P(X_{i,E})P(X_{j,E})\)`
     --
 
     <br/>
@@ -1142,7 +1142,7 @@
 
 
     ---
-    # Three trophic levels networks
+    # Three trophic levels network
     <hr/><br/>
 
     # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids
@@ -1188,14 +1188,14 @@
     ![:scale 100%](./fig/figSG4.png)
 
     ---
-    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler - `\(P(X_{i,G},X_{j,G})\)`
+    # Willow <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Galler - `\(P(X_{i,E},X_{j,E})\)`
     <hr/><br/>
 
     ![:scale 100%](./fig/figSG5.png)
 
 
     ---
-    # Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids -  `\(P(X_{i,G},X_{j,G})\)`
+    # Galler <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Parasitoids -  `\(P(X_{i,E},X_{j,E})\)`
     <hr/><br/>
     ![:scale 100%](./fig/figGP5.png)
 
@@ -1315,7 +1315,7 @@
     # Answers
     <hr/><br/>
 
-    ## 3. Can we infer interactions from co-occurrence?
+    ## 3. Can we infer interactions from co-occurrence data?
     --
 
     ### `\( \Longrightarrow \)` depends on the network properties
@@ -1330,7 +1330,7 @@
 
 
     ---
-    # What do we really integrate?
+    # Is it correct?
     <hr/>
 
     .center[![:scale 90%](./fig/figshtenv2.png)]
@@ -1977,13 +1977,13 @@
     // `this` is the value in the parenthesis, or undefined if left out
     return this.toUpperCase();
   };
-</script>
 
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
 <script type="text/javascript">
     var slideshow = remark.create();
     // ratio: "4:3",
-    // ratio: "16:9",
+    ratio: "16:9",
 
     // Setup MathJax
     MathJax.Hub.Config({
