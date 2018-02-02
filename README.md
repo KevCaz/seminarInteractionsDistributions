@@ -1,7 +1,7 @@
 # Do biotic interactions affect species distribution
 
 
-## What is this repo?
+## What is this repository?
 
 This repository includes the slides for:
 
@@ -12,14 +12,14 @@ for this great opportunity.
   - **version 2.0.1**: the seminar I gave on January 8th, 2018 at the [Department of Ecology & Evolutionary Biology University of Toronto](http://www.eeb.utoronto.ca/home.html). Many thanks to [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/people/) for the kind invitation.
 
   - **version 3.0.1**: February 2nd, 2018 at the [IRBV, Montreal](http://www.irbv.umontreal.ca/).
-  Many thanks to @alexiscarter for the invitation.
+  Many thanks to [Alexis Carteron](https://www.researchgate.net/profile/Alexis_Carteron) (@alexiscarter) for the invitation :smile:.
 
 
-## Few details about how I have created this presentation
+## Few details about how this presentation was created
 
 1. Slides are created using [remark.js](https://github.com/gnab/remark);
 
-2. Figures of my own are created using [R](https://www.r-project.org/);
+2. Figures of my own are created using [R](https://www.r-project.org/); see https://github.com/KevCaz/figTalks
 
 3. [decktape](https://github.com/astefanutti/decktape) is used to export the slides when needed.
 
