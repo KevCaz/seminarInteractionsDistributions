@@ -9,11 +9,13 @@ This repository includes the slides for:
 Thuiller](https://www.researchgate.net/profile/Wilfried_Thuiller) who invited me
 for this great opportunity.
 
+  - **version 2.0.1**: the seminar I gave on January 8th, 2018 at the [Department of Ecology & Evolutionary Biology University of Toronto](http://www.eeb.utoronto.ca/home.html). Many thanks to [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/people/) for the kind invitation.
 
-  - **version 2.0.1**: the seminar I gave on January 8th, 2018 at the [Department of Ecology & Evolutionary Biology University of Toronto](http://www.eeb.utoronto.ca/home.html). Many thanks [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/people/) for the kind invitation.
+  - **version 3.0.1**: February 2nd, 2018 at the [IRBV, Montreal](http://www.irbv.umontreal.ca/).
+  Many thanks to @alexiscarter for the invitation.
 
 
-## Few details about how I have created this presentations
+## Few details about how I have created this presentation
 
 1. Slides are created using [remark.js](https://github.com/gnab/remark);
 
@@ -24,3 +26,9 @@ for this great opportunity.
 ```
 decktape --no-sandbox file:///path/to/index.html /path2/to/talkUot2017_KC.pdf
 ```
+
+
+## Todo
+
+- [ ] some colors needs to be changed;
+- [ ] '*reional*' in the figure1 of the etib;
