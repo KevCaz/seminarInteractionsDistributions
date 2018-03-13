@@ -5,14 +5,20 @@
 
 This repository includes the slides for:
 
+  - **version 4.0.1**: March 13th, 2018 at the [Department of Integrative Biology, University of Guelph](https://www.uoguelph.ca/ib/), where I am currently (was?) a post-doc
+  researcher [@McCannLab](https://www.mccannlab.org/).
+
+  - **version 3.0.1**: February 2nd, 2018 at the [IRBV, Montreal](http://www.irbv.umontreal.ca/).
+  Many thanks to [Alexis Carteron](https://www.researchgate.net/profile/Alexis_Carteron) (@alexiscarter) for the invitation :smile:.
+
+  - **version 2.0.1**: the seminar I gave on January 8th, 2018 at the [Department of Ecology & Evolutionary Biology University of Toronto](http://www.eeb.utoronto.ca/home.html). Many thanks to [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/people/) for the kind invitation.
+
   - **version 1.0.1**: the seminar I gave on February 9th, 2017 at the [Laboratoire d'ECologie Alpine](http://www-leca.ujf-grenoble.fr/?lang=en). I would like to thanks [Wilfried
 Thuiller](https://www.researchgate.net/profile/Wilfried_Thuiller) who invited me
 for this great opportunity.
 
-  - **version 2.0.1**: the seminar I gave on January 8th, 2018 at the [Department of Ecology & Evolutionary Biology University of Toronto](http://www.eeb.utoronto.ca/home.html). Many thanks to [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/people/) for the kind invitation.
 
-  - **version 3.0.1**: February 2nd, 2018 at the [IRBV, Montreal](http://www.irbv.umontreal.ca/).
-  Many thanks to [Alexis Carteron](https://www.researchgate.net/profile/Alexis_Carteron) (@alexiscarter) for the invitation :smile:.
+
 
 
 ## Few details about how this presentation was created
