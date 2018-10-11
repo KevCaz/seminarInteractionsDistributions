@@ -3,7 +3,10 @@
 
 ## What is this repository?
 
-This repository includes the slides for:
+This repository includes slides for:
+
+  - **Current version (future v5.0.1)**: October 12th, 2018 at the
+  [Université de Sherbrooke](https://www.usherbrooke.ca/biologie/).
 
   - **version 4.0.1**: March 13th, 2018 at the [Department of Integrative Biology, University of Guelph](https://www.uoguelph.ca/ib/), where I am currently (was?) a post-doc
   researcher [@McCannLab](https://www.mccannlab.org/).
