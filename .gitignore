@@ -1,5 +1,7 @@
 # KevCaz added
 *.pdf
+node_modules/
+package-lock.json
 
 # History files
 .Rhistory
